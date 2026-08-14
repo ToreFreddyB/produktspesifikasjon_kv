@@ -3,10 +3,6 @@ output_directory: produktspesifikasjon
 product_slug: vrak_og_hefter_i_sjokart
 updated: '2026-08-14'
 scopes:
-- name: atom_gpk
-  url: http://nedlasting.geonorge.no/geonorge/ATOM-feeds/VrakogHefterSjokart_AtomFeedGPKG.xml
-  generator: geopackage
-  description: GeoPackage (Atom Feed)
 - name: Ny datakilde
   url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Statens kartverk/VrakOgHefterSjøkart-20260415.xml
   generator: xmi
