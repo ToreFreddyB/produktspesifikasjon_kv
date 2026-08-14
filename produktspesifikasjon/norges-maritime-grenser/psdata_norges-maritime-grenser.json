@@ -1,0 +1,835 @@
+{
+  "overview": "Denne produktspesifikasjonen er autogenerert fra metadata i Geonorge og datamodell fra SOSI modellregister og/eller OGC API Features. Noe ekstra informasjon kan ha blitt lagt til gjennom manuell prosess. Produktspesifikasjonen er i henhold til standarden: 'Geografisk informasjon - Dataproduktspesifikasjoner' (ISO19131:2022)",
+  "title": "Norges maritime grenser",
+  "format": "text/html",
+  "date": {
+    "creation": "2007-07-01",
+    "revision": "2025-04-11"
+  },
+  "language": "nor",
+  "contact": {
+    "individualName": "Liv Mari Nesje",
+    "organizationName": "Kartverket",
+    "logo": "https://register.geonorge.no/data/organizations/971040238_Kartverket_liten.png",
+    "electronicMailAddress": "kundesenter@kartverket.no",
+    "role": "owner"
+  },
+  "identificationSection": {
+    "title": "Norges maritime grenser",
+    "abstract": "Norges maritime grenser er en samlebetegnelse for grenser og soner i havområder som inngår i Norges lover og forskrifter. Grensene og områdene er sammenstilt i et offisielt vektordatasett som dekker områdene Fastlands-Norge, Jan Mayen og Svalbard, samt Bouvetøya.",
+    "purpose": {
+      "summary": "Kunne tilby et sømløst datasett med Norges offisielle maritime grenser med tilfredsstillende nøyaktighet for nasjonens suverenitetshevdelse, ressursutnyttelse, oppsyn og navigasjon. Effektiv og god forvaltning av de maritime grensene. Effektivt kunne tilgjengeliggjøre oppdaterte maritime grenser.",
+      "useCase": {
+        "name": "Bruksområde",
+        "summary": "Til bruk for nasjonens suverenitetshevdelse, ressursutnyttelse, oppsyn og navigasjon. Egner seg blant annet til bakgrunnsinformasjon for planlegging og presentasjon av statistikk og analyser, oversiktskart, interaktive kart og datagrunnlag for kartløsninger på Internett."
+      }
+    },
+    "topicCategory": [
+      "Administrative grenser"
+    ],
+    "spatialRepresentationType": "Vektor",
+    "spatialResolution": {
+      "equivalentScale": "50000"
+    },
+    "uniqueId": "https://data.geonorge.no/sosi/administrativeenheter/norges_maritime_grenser",
+    "keyword": [
+      "Sjøgrense",
+      "Sjøgrenser",
+      "fiskerisone",
+      "fiskevernsone",
+      "delelinje",
+      "økonomisk sone",
+      "grunnlinje",
+      "territorialgrense",
+      "tilstøtende sone",
+      "indre farvann",
+      "territorialfarvann",
+      "sjøterritorium",
+      "barentswatch",
+      "maritime grenser",
+      "kontinentalsokkel",
+      "Bouvetøya",
+      "Svalbard",
+      "Jan Mayen",
+      "Norge",
+      "Havområder",
+      "Barentshavet",
+      "Norskehavet",
+      "Administrative enheter",
+      "Inspire",
+      "Det offentlige kartgrunnlaget",
+      "geodataloven",
+      "Norge digitalt",
+      "fellesDatakatalog",
+      "Basis geodata",
+      "NorskeGrenser",
+      "dokumentasjonsreferanse",
+      "land",
+      "BeregnetGrense",
+      "BeregnetMidtlinje",
+      "Territorialområde",
+      "InternasjonaltFarvann",
+      "Gråsonen",
+      "AvtaltAvgrensningslinje",
+      "MerketGrensepunkt",
+      "beskrivelse",
+      "etableringsdato",
+      "Grensebøye",
+      "TidligereOmstridtOmråde",
+      "Gråsonegrense",
+      "TilstøtendeSone",
+      "YttergrenseTilstøtendeSone",
+      "IndreFarvann",
+      "NorgesØkonomiskeSone",
+      "Sektorlinje",
+      "MaritimeOmråder",
+      "virkeområdenavn",
+      "sonetype",
+      "miljøområde",
+      "spesialisertSonetype",
+      "DetSærskilteOmrådet",
+      "Kystkontur",
+      "grense",
+      "kystreferanse",
+      "kysttype",
+      "Sjørøys",
+      "LandIndreFarvann",
+      "YttergrenseSokkel",
+      "MaritimtPunkt",
+      "punktreferanse",
+      "AvtalteGrenser",
+      "GrenseMellomNasjoner",
+      "MaritimeGrenser",
+      "grensestatus",
+      "fastsettingstype",
+      "200NautiskeMil"
+    ],
+    "restriction": {
+      "resourceConstraints": {
+        "useLimitations": "Ingen begrensninger på bruk er oppgitt."
+      },
+      "legalConstraints": {
+        "accessConstraints": "Åpne data",
+        "useConstraints": "Lisens",
+        "license": "Creative Commons BY 3.0 (CC BY 3.0)",
+        "licenseUrl": "http://creativecommons.org/licenses/by/3.0/no/"
+      },
+      "securityConstraints": {
+        "classification": "Ugradert"
+      }
+    },
+    "contact": [
+      {
+        "individualName": "Liv Mari Nesje",
+        "organizationName": "Kartverket",
+        "electronicMailAddress": "kundesenter@kartverket.no",
+        "role": "owner"
+      },
+      {
+        "individualName": "Liv Mari Nesje",
+        "organizationName": "Kartverket",
+        "electronicMailAddress": "kundesenter@kartverket.no",
+        "role": "pointOfContact"
+      },
+      {
+        "organizationName": "Kartverket",
+        "electronicMailAddress": "kundesenter@kartverket.no",
+        "role": "publisher"
+      }
+    ],
+    "maintenance": "Etter behov",
+    "extent": {
+      "temporalElement": {
+        "timePeriod": {
+          "beginPosition": "2007-07-01",
+          "endPosition": "2025-04-11"
+        }
+      }
+    },
+    "date": {
+      "creation": "2007-07-01",
+      "publication": "2007-07-01",
+      "revision": "2025-04-11"
+    },
+    "language": "nor"
+  },
+  "scopeSection": [
+    {
+      "specificationScope": {
+        "scopeIdentification": "Hele datasettet",
+        "level": "dataset",
+        "levelDescription": "Gjelder hele datasettet. Hvis omfang ikke er oppgitt under en overskrift, gjelder teksten for hele datasettet og alle leveranser"
+      }
+    },
+    {
+      "specificationScope": {
+        "scopeIdentification": "Ny datakilde",
+        "level": "dataset"
+      }
+    }
+  ],
+  "referenceSystemSection": {
+    "spatialReferenceSystem": [
+      {
+        "code": "EPSG:25833",
+        "name": "EUREF89 UTM sone 33, 2d"
+      },
+      {
+        "code": "EPSG:3035",
+        "name": "EUREF89 / ETRS89-LAEA Europe"
+      },
+      {
+        "code": "EPSG:4258",
+        "name": "EUREF 89 Geografisk (ETRS 89) 2d"
+      },
+      {
+        "code": "EPSG:25833",
+        "name": "EUREF89 UTM sone 33, 2d"
+      }
+    ]
+  },
+  "dataQualitySection": {
+    "scope": {
+      "level": "dataset"
+    },
+    "report": [
+      {
+        "nameOfMeasure": "COMMISSION REGULATION (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services",
+        "measureDescription": "The dataset is established according to national specifications.",
+        "descriptiveResult": "The dataset is established according to national specifications."
+      },
+      {
+        "nameOfMeasure": "SOSI-produktspesifikasjon: Administrative enheter - Norges maritime grenser",
+        "measureDescription": "Dataene er i henhold til produktspesifikasjonen",
+        "descriptiveResult": "Dataene er i henhold til produktspesifikasjonen"
+      },
+      {
+        "nameOfMeasure": "Sosi applikasjonsskjema",
+        "measureDescription": "SOSI-filer er i henhold til applikasjonsskjema",
+        "descriptiveResult": "SOSI-filer er i henhold til applikasjonsskjema"
+      },
+      {
+        "nameOfMeasure": "Sosi applikasjonsskjema",
+        "measureDescription": "GML-filer er i henhold til applikasjonsskjema",
+        "descriptiveResult": "GML-filer er i henhold til applikasjonsskjema"
+      },
+      {
+        "nameOfMeasure": "Prosentvis oppfyllelse av FAIR-prinsipper",
+        "measureDescription": "Angir fullstendighet i forhold til krav fra FAIR-prinsippene (The FAIR Guiding Principles for scientific data management and stewardship)",
+        "result": "95"
+      },
+      {
+        "nameOfMeasure": "FAIR",
+        "result": "Prosentvis oppfyllelse av FAIR-prinsipper: 95%"
+      }
+    ]
+  },
+  "maintenanceSection": {
+    "maintenanceAndUpdateFrequency": "Etter behov"
+  },
+  "dataCaptureAndProductionSection": {
+    "DataAcquisitionAndProcessing": {
+      "processStep": [
+        {
+          "description": "Avledet fra.."
+        }
+      ]
+    }
+  },
+  "portrayal": {
+    "name": "Tegneregler",
+    "linkage": "https://register.geonorge.no/register/versjoner/tegneregler/kartverket/norges-maritime-grenser"
+  },
+  "deliverySection": [
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "Geonorge nedlastning",
+          "deliveryService": {
+            "serviceEndpoint": "https://nedlasting.geonorge.no/api/capabilities/",
+            "serviceProperty": {
+              "type": "Geonorge nedlastning",
+              "value": "GEONORGE:DOWNLOAD"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "FGDB"
+          },
+          {
+            "formatName": "GML"
+          },
+          {
+            "formatName": "PostGIS"
+          },
+          {
+            "formatName": "SOSI"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "Atom Feed",
+          "deliveryService": {
+            "serviceEndpoint": "http://nedlasting.geonorge.no/geonorge/ATOM-feeds/NorgesMaritimeGrenser_AtomFeedFGDB.xml",
+            "serviceProperty": {
+              "type": "Atom Feed",
+              "value": "W3C:AtomFeed"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "FGDB"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "Atom Feed",
+          "deliveryService": {
+            "serviceEndpoint": "http://nedlasting.geonorge.no/geonorge/ATOM-feeds/NorgesMaritimeGrenser_AtomFeedGML.xml",
+            "serviceProperty": {
+              "type": "Atom Feed",
+              "value": "W3C:AtomFeed"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "GML"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "Atom Feed",
+          "deliveryService": {
+            "serviceEndpoint": "http://nedlasting.geonorge.no/geonorge/ATOM-feeds/NorgesMaritimeGrenser_AtomFeedPostGIS.xml",
+            "serviceProperty": {
+              "type": "Atom Feed",
+              "value": "W3C:AtomFeed"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "PostGIS"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "Atom Feed",
+          "deliveryService": {
+            "serviceEndpoint": "http://nedlasting.geonorge.no/geonorge/ATOM-feeds/NorgesMaritimeGrenser_AtomFeedSOSI.xml",
+            "serviceProperty": {
+              "type": "Atom Feed",
+              "value": "W3C:AtomFeed"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "SOSI"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Norges økonomiske sone",
+          "deliveryService": {
+            "serviceEndpoint": "https://wms.geonorge.no/skwms1/wms.nmg?",
+            "serviceProperty": {
+              "type": "Norges økonomiske sone",
+              "value": "Tjenestelag"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "OGC WMS",
+            "version": "1.3.0"
+          }
+        ],
+        "deliveryScope": "Tjeneste"
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Yttergrense for kontinentalsokkel",
+          "deliveryService": {
+            "serviceEndpoint": "https://wms.geonorge.no/skwms1/wms.nmg?",
+            "serviceProperty": {
+              "type": "Yttergrense for kontinentalsokkel",
+              "value": "Tjenestelag"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "OGC WMS",
+            "version": "1.3.0"
+          }
+        ],
+        "deliveryScope": "Tjeneste"
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Territorialgrense 12 nautiske mil",
+          "deliveryService": {
+            "serviceEndpoint": "https://wms.geonorge.no/skwms1/wms.nmg?",
+            "serviceProperty": {
+              "type": "Territorialgrense 12 nautiske mil",
+              "value": "Tjenestelag"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "OGC WMS",
+            "version": "1.3.0"
+          }
+        ],
+        "deliveryScope": "Tjeneste"
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Internasjonalt farvann",
+          "deliveryService": {
+            "serviceEndpoint": "https://wms.geonorge.no/skwms1/wms.nmg?service=wms&request=getcapabilities",
+            "serviceProperty": {
+              "type": "Internasjonalt farvann",
+              "value": "Tjenestelag"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "OGC WMS",
+            "version": "1.3.0"
+          }
+        ],
+        "deliveryScope": "Tjeneste"
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Indre farvann",
+          "deliveryService": {
+            "serviceEndpoint": "https://wms.geonorge.no/skwms1/wms.nmg?service=wms&request=getcapabilities",
+            "serviceProperty": {
+              "type": "Indre farvann",
+              "value": "Tjenestelag"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "OGC WMS",
+            "version": "1.3.0"
+          }
+        ],
+        "deliveryScope": "Tjeneste"
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Landareal Norge",
+          "deliveryService": {
+            "serviceEndpoint": "http://wms.geonorge.no/skwms1/wms.nmg?service=wms&request=getcapabilities",
+            "serviceProperty": {
+              "type": "Landareal Norge",
+              "value": "Tjenestelag"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "OGC WMS",
+            "version": "1.3.0"
+          }
+        ],
+        "deliveryScope": "Tjeneste"
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "200 nautiske mil",
+          "deliveryService": {
+            "serviceEndpoint": "https://wms.geonorge.no/skwms1/wms.nmg?",
+            "serviceProperty": {
+              "type": "200 nautiske mil",
+              "value": "Tjenestelag"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "OGC WMS",
+            "version": "1.3.0"
+          }
+        ],
+        "deliveryScope": "Tjeneste"
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Sjøterritorium",
+          "deliveryService": {
+            "serviceEndpoint": "https://wms.geonorge.no/skwms1/wms.nmg?",
+            "serviceProperty": {
+              "type": "Sjøterritorium",
+              "value": "Tjenestelag"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "OGC WMS",
+            "version": "1.3.0"
+          }
+        ],
+        "deliveryScope": "Tjeneste"
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Avtalt avgrensningslinje",
+          "deliveryService": {
+            "serviceEndpoint": "https://wms.geonorge.no/skwms1/wms.nmg?service=wms&request=getcapabilities",
+            "serviceProperty": {
+              "type": "Avtalt avgrensningslinje",
+              "value": "Tjenestelag"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "OGC WMS",
+            "version": "1.3.0"
+          }
+        ],
+        "deliveryScope": "Tjeneste"
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Fastlands-Norge med indre farvann",
+          "deliveryService": {
+            "serviceEndpoint": "https://wms.geonorge.no/skwms1/wms.nmg?service=wms&request=getcapabilities",
+            "serviceProperty": {
+              "type": "Fastlands-Norge med indre farvann",
+              "value": "Tjenestelag"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "OGC WMS",
+            "version": "1.3.0"
+          }
+        ],
+        "deliveryScope": "Tjeneste"
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Navn maritime grenser",
+          "deliveryService": {
+            "serviceEndpoint": "https://wms.geonorge.no/skwms1/wms.nmg?",
+            "serviceProperty": {
+              "type": "Navn maritime grenser",
+              "value": "Tjenestelag"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "OGC WMS",
+            "version": "1.3.0"
+          }
+        ],
+        "deliveryScope": "Tjeneste"
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Norges kontinentalsokkel",
+          "deliveryService": {
+            "serviceEndpoint": "https://wms.geonorge.no/skwms1/wms.nmg?",
+            "serviceProperty": {
+              "type": "Norges kontinentalsokkel",
+              "value": "Tjenestelag"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "OGC WMS",
+            "version": "1.3.0"
+          }
+        ],
+        "deliveryScope": "Tjeneste"
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Fiskerigrense",
+          "deliveryService": {
+            "serviceEndpoint": "https://wms.geonorge.no/skwms1/wms.nmg?service=wms&request=getcapabilities",
+            "serviceProperty": {
+              "type": "Fiskerigrense",
+              "value": "Tjenestelag"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "OGC WMS",
+            "version": "1.3.0"
+          }
+        ],
+        "deliveryScope": "Tjeneste"
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Det særskilte området, DSO",
+          "deliveryService": {
+            "serviceEndpoint": "https://wms.geonorge.no/skwms1/wms.nmg?",
+            "serviceProperty": {
+              "type": "Det særskilte området, DSO",
+              "value": "Tjenestelag"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "OGC WMS",
+            "version": "1.3.0"
+          }
+        ],
+        "deliveryScope": "Tjeneste"
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Navn maritime områder",
+          "deliveryService": {
+            "serviceEndpoint": "https://wms.geonorge.no/skwms1/wms.nmg?",
+            "serviceProperty": {
+              "type": "Navn maritime områder",
+              "value": "Tjenestelag"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "OGC WMS",
+            "version": "1.3.0"
+          }
+        ],
+        "deliveryScope": "Tjeneste"
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Yttergrense for tilstøtende sone 24 nautiske mil",
+          "deliveryService": {
+            "serviceEndpoint": "https://wms.geonorge.no/skwms1/wms.nmg?service=wms&request=getcapabilities",
+            "serviceProperty": {
+              "type": "Yttergrense for tilstøtende sone 24 nautiske mil",
+              "value": "Tjenestelag"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "OGC WMS",
+            "version": "1.3.0"
+          }
+        ],
+        "deliveryScope": "Tjeneste"
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Territorialområde",
+          "deliveryService": {
+            "serviceEndpoint": "https://wms.geonorge.no/skwms1/wms.nmg?",
+            "serviceProperty": {
+              "type": "Territorialområde",
+              "value": "Tjenestelag"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "OGC WMS",
+            "version": "1.3.0"
+          }
+        ],
+        "deliveryScope": "Tjeneste"
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Fiskevernsonen ved Svalbard",
+          "deliveryService": {
+            "serviceEndpoint": "https://wms.geonorge.no/skwms1/wms.nmg?",
+            "serviceProperty": {
+              "type": "Fiskevernsonen ved Svalbard",
+              "value": "Tjenestelag"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "OGC WMS",
+            "version": "1.3.0"
+          }
+        ],
+        "deliveryScope": "Tjeneste"
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Fiskerisonen ved Jan Mayen",
+          "deliveryService": {
+            "serviceEndpoint": "https://wms.geonorge.no/skwms1/wms.nmg?",
+            "serviceProperty": {
+              "type": "Fiskerisonen ved Jan Mayen",
+              "value": "Tjenestelag"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "OGC WMS",
+            "version": "1.3.0"
+          }
+        ],
+        "deliveryScope": "Tjeneste"
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Avtalt avgrensningslinje for kontinentalsokkel",
+          "deliveryService": {
+            "serviceEndpoint": "http://wms.geonorge.no/skwms1/wms.nmg?",
+            "serviceProperty": {
+              "type": "Avtalt avgrensningslinje for kontinentalsokkel",
+              "value": "Tjenestelag"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "OGC WMS",
+            "version": "1.3.0"
+          }
+        ],
+        "deliveryScope": "Tjeneste"
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Territorialfarvann",
+          "deliveryService": {
+            "serviceEndpoint": "https://wms.geonorge.no/skwms1/wms.nmg?",
+            "serviceProperty": {
+              "type": "Territorialfarvann",
+              "value": "Tjenestelag"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "OGC WMS",
+            "version": "1.3.0"
+          }
+        ],
+        "deliveryScope": "Tjeneste"
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Norges maritime grenser WMS",
+          "deliveryService": {
+            "serviceEndpoint": "https://wms.geonorge.no/skwms1/wms.nmg?service=wms&request=getcapabilities",
+            "serviceProperty": {
+              "type": "Norges maritime grenser WMS",
+              "value": "WMS-tjeneste"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "OGC WMS",
+            "version": "1.3.0"
+          }
+        ],
+        "deliveryScope": "Tjeneste"
+      }
+    }
+  ],
+  "metadataSection": {
+    "metadataStandard": "ISO19115",
+    "metadataStandardVersion": "2003",
+    "metadataDate": "2026-08-14",
+    "language": "nor",
+    "contact": {
+      "organizationName": "Kartverket",
+      "individualName": "Liv Mari Nesje",
+      "logo": "https://register.geonorge.no/data/organizations/971040238_Kartverket_liten.png",
+      "electronicMailAddress": "kundesenter@kartverket.no",
+      "role": "pointOfContact"
+    },
+    "metadataIdentifier": {
+      "authority": "Geonorge",
+      "code": "e106adf4-c9d8-4fce-a9b5-7886a4126d23",
+      "codeSpace": "https://kartkatalog.geonorge.no/metadata/",
+      "metadataLinkage": "https://kartkatalog.geonorge.no/metadata/e106adf4-c9d8-4fce-a9b5-7886a4126d23"
+    }
+  }
+}
