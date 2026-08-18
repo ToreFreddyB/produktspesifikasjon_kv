@@ -1,0 +1,290 @@
+[
+  {
+    "name": "hefteurenbunn_posisjon",
+    "description": "",
+    "geometry": {
+      "itemType": "feature",
+      "type": "geometry-point",
+      "format": "geometry-point",
+      "ogcRole": "primary-geometry",
+      "crs": [
+        "http://www.opengis.net/def/crs/EPSG/0/4258"
+      ],
+      "storageCrs": "http://www.opengis.net/def/crs/EPSG/0/4258"
+    },
+    "attributes": [
+      {
+        "name": "objid",
+        "type": "integer",
+        "cardinality": "1",
+        "ogcRole": "id"
+      },
+      {
+        "name": "objtype",
+        "type": "string",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "lokalid",
+        "type": "string",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "navnerom",
+        "type": "string",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "forstedatafangstdato",
+        "type": "dateTime",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "oppdateringsdato",
+        "type": "dateTime",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "datauttaksdato",
+        "type": "dateTime",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "malemetode",
+        "type": "string",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "noyaktighet",
+        "type": "integer",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "hefteurenbunntype",
+        "type": "string",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "dybde",
+        "type": "number",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "vertikaldatum",
+        "type": "string",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "objektnavnengelsk",
+        "type": "string",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "objektnavnnorsk",
+        "type": "string",
+        "cardinality": "0..1"
+      }
+    ]
+  },
+  {
+    "name": "vrak_omrade",
+    "description": "",
+    "geometry": {
+      "itemType": "feature",
+      "type": "geometry-polygon",
+      "format": "geometry-polygon",
+      "ogcRole": "primary-geometry",
+      "crs": [
+        "http://www.opengis.net/def/crs/EPSG/0/4258"
+      ],
+      "storageCrs": "http://www.opengis.net/def/crs/EPSG/0/4258"
+    },
+    "attributes": [
+      {
+        "name": "objid",
+        "type": "integer",
+        "cardinality": "1",
+        "ogcRole": "id"
+      },
+      {
+        "name": "objtype",
+        "type": "string",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "lokalid",
+        "type": "string",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "navnerom",
+        "type": "string",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "forstedatafangstdato",
+        "type": "dateTime",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "oppdateringsdato",
+        "type": "dateTime",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "datauttaksdato",
+        "type": "dateTime",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "malemetode",
+        "type": "string",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "noyaktighet",
+        "type": "integer",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "vraktype",
+        "type": "string",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "dybde",
+        "type": "number",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "vertikaldatum",
+        "type": "string",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "objektnavnengelsk",
+        "type": "string",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "objektnavnnorsk",
+        "type": "string",
+        "cardinality": "0..1"
+      }
+    ]
+  },
+  {
+    "name": "vrak_posisjon",
+    "description": "",
+    "geometry": {
+      "itemType": "feature",
+      "type": "geometry-point",
+      "format": "geometry-point",
+      "ogcRole": "primary-geometry",
+      "crs": [
+        "http://www.opengis.net/def/crs/EPSG/0/4258"
+      ],
+      "storageCrs": "http://www.opengis.net/def/crs/EPSG/0/4258"
+    },
+    "attributes": [
+      {
+        "name": "objid",
+        "type": "integer",
+        "cardinality": "1",
+        "ogcRole": "id"
+      },
+      {
+        "name": "objtype",
+        "type": "string",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "lokalid",
+        "type": "string",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "navnerom",
+        "type": "string",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "forstedatafangstdato",
+        "type": "dateTime",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "oppdateringsdato",
+        "type": "dateTime",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "datauttaksdato",
+        "type": "dateTime",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "malemetode",
+        "type": "string",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "noyaktighet",
+        "type": "integer",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "vraktype",
+        "type": "string",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "dybde",
+        "type": "number",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "vertikaldatum",
+        "type": "string",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "objektnavnengelsk",
+        "type": "string",
+        "cardinality": "0..1"
+      },
+      {
+        "name": "objektnavnnorsk",
+        "type": "string",
+        "cardinality": "0..1"
+      }
+    ]
+  },
+  {
+    "name": "vrakgrense_grense",
+    "description": "",
+    "geometry": {
+      "itemType": "feature",
+      "type": "geometry-line",
+      "format": "geometry-line",
+      "ogcRole": "primary-geometry",
+      "crs": [
+        "http://www.opengis.net/def/crs/EPSG/0/4258"
+      ],
+      "storageCrs": "http://www.opengis.net/def/crs/EPSG/0/4258"
+    },
+    "attributes": [
+      {
+        "name": "objid",
+        "type": "integer",
+        "cardinality": "1",
+        "ogcRole": "id"
+      },
+      {
+        "name": "objtype",
+        "type": "string",
+        "cardinality": "0..1"
+      }
+    ]
+  }
+]

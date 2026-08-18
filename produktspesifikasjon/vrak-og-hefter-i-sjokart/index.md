@@ -25,14 +25,14 @@ Datasettet forvaltes kontinuerlig og publiseres av Kartverket.*
 
 - **Tidsperiode**:
   - **Fra**: 2026-01-14
-  - **Til**: 2026-08-07
+  - **Til**: 2026-08-17
 
 ## Om spesifikasjonen
 
 
 > **Denne versjonen av produktspesifikasjonen:** <br>
 > **Opprettet dato:** 2026-01-14<br>
-> **Endret dato:** 2026-08-07<br>
+> **Endret dato:** 2026-08-17<br>
 > **Språk:** nor<br>
 > **Kontaktinformasjon:** Kartverket, [reisir@kartverket.no](mailto:reisir@kartverket.no)
 
@@ -81,7 +81,12 @@ Riksantikvaren, Kystverket og Forsvaret er andre etater som kan ha ytterligere i
 
 **Nivåbeskrivelse**: Gjelder hele datasettet. Hvis omfang ikke er oppgitt under en overskrift, gjelder teksten for hele datasettet og alle leveranser
 
-### Ny datakilde
+### Filleveranse basert på UML-modell
+
+**Nivå**: dataset
+
+
+### GeoPackage skjema
 
 **Nivå**: dataset
 
@@ -90,15 +95,25 @@ Riksantikvaren, Kystverket og Forsvaret er andre etater som kan ha ytterligere i
 
 
 
-### Datamodell - Ny datakilde
+### Datamodell - Filleveranse basert på UML-modell
 
 
 
-<a href="ny-datakilde/ny-datakilde_feature_catalogue.png" title="Klikk for stor visning"><img src="ny-datakilde/ny-datakilde_feature_catalogue.png" alt="Datamodell Ny datakilde" style="max-width: 100%; height: auto;" /></a>
+<a href="filleveranse-basert-pa-uml-modell/filleveranse-basert-pa-uml-modell_feature_catalogue.png" title="Klikk for stor visning"><img src="filleveranse-basert-pa-uml-modell/filleveranse-basert-pa-uml-modell_feature_catalogue.png" alt="Datamodell Filleveranse basert på UML-modell" style="max-width: 100%; height: auto;" /></a>
 
 
 
-➡️ [Se full datamodell for omfang "Ny datakilde" (diagram per pakke og objektkatalog)](ny-datakilde/objektkatalog.html)
+➡️ [Se full datamodell for omfang "Filleveranse basert på UML-modell" (diagram per pakke og objektkatalog)](filleveranse-basert-pa-uml-modell/objektkatalog.html)
+
+### Datamodell - GeoPackage skjema
+
+
+
+<a href="geopackage-skjema/geopackage-skjema_feature_catalogue.png" title="Klikk for stor visning"><img src="geopackage-skjema/geopackage-skjema_feature_catalogue.png" alt="Datamodell GeoPackage skjema" style="max-width: 100%; height: auto;" /></a>
+
+
+
+➡️ [Se full datamodell for omfang "GeoPackage skjema" (diagram per pakke og objektkatalog)](geopackage-skjema/objektkatalog.html)
 
 ## Referansesystem
 
@@ -162,7 +177,7 @@ Riksantikvaren, Kystverket og Forsvaret er andre etater som kan ha ytterligere i
 
 **Metadatastandardversjon**: 2003
 
-**Metadatadato**: 2026-08-14
+**Metadatadato**: 2026-08-18
 
 **språk**: nor
 

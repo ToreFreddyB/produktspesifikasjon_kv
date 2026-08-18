@@ -1,0 +1,102 @@
+@startuml
+' For wide diagrams, render with: plantuml -DPLANTUML_LIMIT_SIZE=16384 ...
+' The 'scale max' directive below caps the rendered output to prevent the
+' default PlantUML 4096px size limit from cropping the diagram.
+scale max 4000*4000
+
+title Vrak og hefter i sjøkart - GeoPackage skjema - Objekttyper
+
+skinparam backgroundColor #F5F5F5
+skinparam shadowing false
+skinparam RoundCorner 6
+skinparam ArrowColor #6C8198
+skinparam wrapWidth 200
+skinparam class {
+  BackgroundColor #FBF2E8
+  BorderColor #9C8578
+  FontColor #2D201A
+  HeaderBackgroundColor #EFE1D6
+  HeaderFontColor #2D201A
+  AttributeIconSize 0
+}
+skinparam note {
+  BackgroundColor #FFFFFF
+  BorderColor #6C8198
+  FontColor #2D201A
+}
+skinparam stereotypeCBackgroundColor #EAD9CE
+skinparam stereotypeCBorderColor #9C8578
+skinparam stereotypeCFontColor #2D201A
+
+package "Objekttyper" {
+
+  class hefteurenbunn_posisjon <<featureType>> {
+    + objid [1] : Integer
+    + objtype [0..1] : CharacterString
+    + lokalid [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + forstedatafangstdato [0..1] : Date
+    + oppdateringsdato [0..1] : Date
+    + datauttaksdato [0..1] : Date
+    + malemetode [0..1] : CharacterString
+    + noyaktighet [0..1] : Integer
+    + hefteurenbunntype [0..1] : CharacterString
+    + dybde [0..1] : Real
+    + vertikaldatum [0..1] : CharacterString
+    + objektnavnengelsk [0..1] : CharacterString
+    + objektnavnnorsk [0..1] : CharacterString
+
+    ..Geometri..
+    + geometry [1] : GM_Point
+  }
+
+  class vrak_omrade <<featureType>> {
+    + objid [1] : Integer
+    + objtype [0..1] : CharacterString
+    + lokalid [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + forstedatafangstdato [0..1] : Date
+    + oppdateringsdato [0..1] : Date
+    + datauttaksdato [0..1] : Date
+    + malemetode [0..1] : CharacterString
+    + noyaktighet [0..1] : Integer
+    + vraktype [0..1] : CharacterString
+    + dybde [0..1] : Real
+    + vertikaldatum [0..1] : CharacterString
+    + objektnavnengelsk [0..1] : CharacterString
+    + objektnavnnorsk [0..1] : CharacterString
+
+    ..Geometri..
+    + geometry [1] : GM_Surface
+  }
+
+  class vrak_posisjon <<featureType>> {
+    + objid [1] : Integer
+    + objtype [0..1] : CharacterString
+    + lokalid [0..1] : CharacterString
+    + navnerom [0..1] : CharacterString
+    + forstedatafangstdato [0..1] : Date
+    + oppdateringsdato [0..1] : Date
+    + datauttaksdato [0..1] : Date
+    + malemetode [0..1] : CharacterString
+    + noyaktighet [0..1] : Integer
+    + vraktype [0..1] : CharacterString
+    + dybde [0..1] : Real
+    + vertikaldatum [0..1] : CharacterString
+    + objektnavnengelsk [0..1] : CharacterString
+    + objektnavnnorsk [0..1] : CharacterString
+
+    ..Geometri..
+    + geometry [1] : GM_Point
+  }
+
+  class vrakgrense_grense <<featureType>> {
+    + objid [1] : Integer
+    + objtype [0..1] : CharacterString
+
+    ..Geometri..
+    + geometry [1] : GM_Curve
+  }
+}
+
+@enduml

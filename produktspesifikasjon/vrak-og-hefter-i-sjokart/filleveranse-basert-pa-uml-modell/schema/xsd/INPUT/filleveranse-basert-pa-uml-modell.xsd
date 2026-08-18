@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:filleveransebasertpaumlmodell="https://skjema.geonorge.no/SOSI/produktspesifikasjon/vrak-og-hefter-i-sjokart/filleveranse-basert-pa-uml-modell/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" elementFormDefault="qualified" targetNamespace="https://skjema.geonorge.no/SOSI/produktspesifikasjon/vrak-og-hefter-i-sjokart/filleveranse-basert-pa-uml-modell/1.0" version="1.0">
+  <import namespace="http://www.interactive-instruments.de/ShapeChange/AppInfo" schemaLocation="https://shapechange.net/resources/schema/ShapeChangeAppinfo.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element abstract="true" name="Fellesegenskaper" substitutionGroup="gml:AbstractFeature" type="filleveransebasertpaumlmodell:FellesegenskaperType"/>
+  <complexType abstract="true" name="FellesegenskaperType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="identifikasjon" type="filleveransebasertpaumlmodell:IdentifikasjonPropertyType"/>
+          <element minOccurs="0" name="førsteDatafangstdato" type="date">
+            <annotation>
+              <appinfo>
+                <sc:taggedValue tag="SOSI_navn">FØRSTEDATAFANGSTDATO</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="oppdateringsdato" type="date">
+            <annotation>
+              <appinfo>
+                <sc:taggedValue tag="SOSI_navn">OPPDATERINGSDATO</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="datauttaksdato" type="date">
+            <annotation>
+              <appinfo>
+                <sc:taggedValue tag="SOSI_navn">DATAUTTAKSDATO</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="kvalitet" type="filleveransebasertpaumlmodell:PosisjonskvalitetPropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FellesegenskaperPropertyType">
+    <sequence minOccurs="0">
+      <element ref="filleveransebasertpaumlmodell:Fellesegenskaper"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="HefteUrenBunn" substitutionGroup="filleveransebasertpaumlmodell:Fellesegenskaper" type="filleveransebasertpaumlmodell:HefteUrenBunnType"/>
+  <complexType name="HefteUrenBunnType">
+    <complexContent>
+      <extension base="filleveransebasertpaumlmodell:FellesegenskaperType">
+        <sequence>
+          <element name="posisjon" type="gml:PointPropertyType">
+            <annotation>
+              <appinfo>
+                <sc:taggedValue tag="SOSI_navn">NØ</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="hefteUrenBunntype" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://register.geonorge.no/sosi-kodelister/temadata/maritim-infrastruktur/hefte-uren-bunn-type</sc:targetCodeListURI>
+                <sc:taggedValue tag="SOSI_navn">HEFTEURENBUNNTYPE</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="dybde" type="double">
+            <annotation>
+              <appinfo>
+                <sc:taggedValue tag="SOSI_navn">DYBDE</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="vertikalDatum" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://register.geonorge.no/sosi-kodelister/temadata/maritim-infrastruktur/vertikal-datum</sc:targetCodeListURI>
+                <sc:taggedValue tag="SOSI_navn">VERTIKALDATUM</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="objektnavnEngelsk" type="string">
+            <annotation>
+              <appinfo>
+                <sc:taggedValue tag="SOSI_navn">OBJEKTNAVNENGELSK</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="objektnavnNorsk" type="string">
+            <annotation>
+              <appinfo>
+                <sc:taggedValue tag="SOSI_navn">OBJEKTNAVNNORSK</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="HefteUrenBunnPropertyType">
+    <sequence minOccurs="0">
+      <element ref="filleveransebasertpaumlmodell:HefteUrenBunn"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Identifikasjon" substitutionGroup="gml:AbstractObject" type="filleveransebasertpaumlmodell:IdentifikasjonType"/>
+  <complexType name="IdentifikasjonType">
+    <sequence>
+      <element name="lokalId" type="string">
+        <annotation>
+          <appinfo>
+            <sc:taggedValue tag="SOSI_navn">LOKALID</sc:taggedValue>
+          </appinfo>
+        </annotation>
+      </element>
+      <element name="navnerom" type="string">
+        <annotation>
+          <appinfo>
+            <sc:taggedValue tag="SOSI_navn">NAVNEROM</sc:taggedValue>
+          </appinfo>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="IdentifikasjonPropertyType">
+    <sequence>
+      <element ref="filleveransebasertpaumlmodell:Identifikasjon"/>
+    </sequence>
+  </complexType>
+  <element name="Posisjonskvalitet" substitutionGroup="gml:AbstractObject" type="filleveransebasertpaumlmodell:PosisjonskvalitetType"/>
+  <complexType name="PosisjonskvalitetType">
+    <sequence>
+      <element name="målemetode" type="gml:CodeType">
+        <annotation>
+          <appinfo>
+            <sc:targetCodeListURI>https://register.geonorge.no/sosi-kodelister/generelle-konsepter/4.5/m%C3%A5lemetode</sc:targetCodeListURI>
+          </appinfo>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="nøyaktighet" type="integer">
+        <annotation>
+          <appinfo>
+            <sc:taggedValue tag="SOSI_navn">NØYAKTIGHET</sc:taggedValue>
+          </appinfo>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="PosisjonskvalitetPropertyType">
+    <sequence>
+      <element ref="filleveransebasertpaumlmodell:Posisjonskvalitet"/>
+    </sequence>
+  </complexType>
+  <element name="Vrak" substitutionGroup="filleveransebasertpaumlmodell:Fellesegenskaper" type="filleveransebasertpaumlmodell:VrakType"/>
+  <complexType name="VrakType">
+    <complexContent>
+      <extension base="filleveransebasertpaumlmodell:FellesegenskaperType">
+        <sequence>
+          <element minOccurs="0" name="område" type="gml:SurfacePropertyType">
+            <annotation>
+              <appinfo>
+                <sc:taggedValue tag="SOSI_navn">Flate</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="posisjon" type="gml:PointPropertyType">
+            <annotation>
+              <appinfo>
+                <sc:taggedValue tag="SOSI_navn">NØ</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="vraktype" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://register.geonorge.no/sosi-kodelister/temadata/maritim-infrastruktur/vraktype</sc:targetCodeListURI>
+                <sc:taggedValue tag="SOSI_navn">VRAKTYP</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="dybde" type="double">
+            <annotation>
+              <appinfo>
+                <sc:taggedValue tag="SOSI_navn">DYBDE</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="vertikalDatum" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <sc:targetCodeListURI>https://register.geonorge.no/sosi-kodelister/temadata/maritim-infrastruktur/vertikal-datum</sc:targetCodeListURI>
+                <sc:taggedValue tag="SOSI_navn">VERTIKALDATUM</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="objektnavnEngelsk" type="string">
+            <annotation>
+              <appinfo>
+                <sc:taggedValue tag="SOSI_navn">OBJEKTNAVNENGELSK</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="objektnavnNorsk" type="string">
+            <annotation>
+              <appinfo>
+                <sc:taggedValue tag="SOSI_navn">OBJEKTNAVNNORSK</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="avgrensesAvVrakgrense" type="filleveransebasertpaumlmodell:VrakgrensePropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="VrakPropertyType">
+    <sequence minOccurs="0">
+      <element ref="filleveransebasertpaumlmodell:Vrak"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Vrakgrense" substitutionGroup="gml:AbstractFeature" type="filleveransebasertpaumlmodell:VrakgrenseType"/>
+  <complexType name="VrakgrenseType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="grense" type="gml:CurvePropertyType">
+            <annotation>
+              <appinfo>
+                <sc:taggedValue tag="SOSI_navn">Kurve</sc:taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="VrakgrensePropertyType">
+    <sequence minOccurs="0">
+      <element ref="filleveransebasertpaumlmodell:Vrakgrense"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>

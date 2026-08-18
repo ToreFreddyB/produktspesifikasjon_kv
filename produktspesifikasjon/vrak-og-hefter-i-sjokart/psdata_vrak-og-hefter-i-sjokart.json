@@ -4,7 +4,7 @@
   "format": "text/html",
   "date": {
     "creation": "2026-01-14",
-    "revision": "2026-08-07"
+    "revision": "2026-08-17"
   },
   "language": "nor",
   "contact": {
@@ -86,14 +86,14 @@
       "temporalElement": {
         "timePeriod": {
           "beginPosition": "2026-01-14",
-          "endPosition": "2026-08-07"
+          "endPosition": "2026-08-17"
         }
       }
     },
     "date": {
       "creation": "2026-01-14",
       "publication": "2026-01-14",
-      "revision": "2026-08-07"
+      "revision": "2026-08-17"
     },
     "language": "nor"
   },
@@ -107,7 +107,13 @@
     },
     {
       "specificationScope": {
-        "scopeIdentification": "Ny datakilde",
+        "scopeIdentification": "Filleveranse basert på UML-modell",
+        "level": "dataset"
+      }
+    },
+    {
+      "specificationScope": {
+        "scopeIdentification": "GeoPackage skjema",
         "level": "dataset"
       }
     }
@@ -286,7 +292,7 @@
   "metadataSection": {
     "metadataStandard": "ISO19115",
     "metadataStandardVersion": "2003",
-    "metadataDate": "2026-08-14",
+    "metadataDate": "2026-08-18",
     "language": "nor",
     "contact": {
       "organizationName": "Kartverket",
