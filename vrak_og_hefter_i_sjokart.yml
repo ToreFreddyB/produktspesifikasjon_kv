@@ -2,8 +2,13 @@ metadataId: a5821b74-096d-4923-aa3c-387cfa0e6218
 output_directory: produktspesifikasjon
 product_slug: vrak_og_hefter_i_sjokart
 updated: '2026-08-14'
+outputs: geopackage,xsd
 scopes:
-- name: Ny datakilde
+- name: Filleveranse basert på UML-modell
   url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Statens kartverk/VrakOgHefterSjøkart-20260415.xml
   generator: xmi
+  description: ''
+- name: GeoPackage skjema
+  url: https://testnedlasting.geonorge.no/geonorge/Temp/Forurensning_0000_Norge_4258_VrakogHefterSjokart_GPKG/Forurensning_0000_Norge_4258_VrakogHefterSjokart_GPKG.gpkg
+  generator: geopackage
   description: ''
