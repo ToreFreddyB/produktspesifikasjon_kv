@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:geopackageskjema="https://skjema.geonorge.no/SOSI/produktspesifikasjon/vrak-og-hefter-i-sjokart/geopackage-skjema/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" elementFormDefault="qualified" targetNamespace="https://skjema.geonorge.no/SOSI/produktspesifikasjon/vrak-og-hefter-i-sjokart/geopackage-skjema/1.0" version="1.0">
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="hefteurenbunn_posisjon" substitutionGroup="gml:AbstractFeature" type="geopackageskjema:hefteurenbunn_posisjonType"/>
+  <complexType name="hefteurenbunn_posisjonType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="geometry" type="gml:PointPropertyType"/>
+          <element name="objid" type="integer"/>
+          <element minOccurs="0" name="objtype" type="string"/>
+          <element minOccurs="0" name="lokalid" type="string"/>
+          <element minOccurs="0" name="navnerom" type="string"/>
+          <element minOccurs="0" name="forstedatafangstdato" type="date"/>
+          <element minOccurs="0" name="oppdateringsdato" type="date"/>
+          <element minOccurs="0" name="datauttaksdato" type="date"/>
+          <element minOccurs="0" name="malemetode" type="string"/>
+          <element minOccurs="0" name="noyaktighet" type="integer"/>
+          <element minOccurs="0" name="hefteurenbunntype" type="string"/>
+          <element minOccurs="0" name="dybde" type="double"/>
+          <element minOccurs="0" name="vertikaldatum" type="string"/>
+          <element minOccurs="0" name="objektnavnengelsk" type="string"/>
+          <element minOccurs="0" name="objektnavnnorsk" type="string"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="hefteurenbunn_posisjonPropertyType">
+    <sequence minOccurs="0">
+      <element ref="geopackageskjema:hefteurenbunn_posisjon"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="vrak_omrade" substitutionGroup="gml:AbstractFeature" type="geopackageskjema:vrak_omradeType"/>
+  <complexType name="vrak_omradeType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="geometry" type="gml:SurfacePropertyType"/>
+          <element name="objid" type="integer"/>
+          <element minOccurs="0" name="objtype" type="string"/>
+          <element minOccurs="0" name="lokalid" type="string"/>
+          <element minOccurs="0" name="navnerom" type="string"/>
+          <element minOccurs="0" name="forstedatafangstdato" type="date"/>
+          <element minOccurs="0" name="oppdateringsdato" type="date"/>
+          <element minOccurs="0" name="datauttaksdato" type="date"/>
+          <element minOccurs="0" name="malemetode" type="string"/>
+          <element minOccurs="0" name="noyaktighet" type="integer"/>
+          <element minOccurs="0" name="vraktype" type="string"/>
+          <element minOccurs="0" name="dybde" type="double"/>
+          <element minOccurs="0" name="vertikaldatum" type="string"/>
+          <element minOccurs="0" name="objektnavnengelsk" type="string"/>
+          <element minOccurs="0" name="objektnavnnorsk" type="string"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="vrak_omradePropertyType">
+    <sequence minOccurs="0">
+      <element ref="geopackageskjema:vrak_omrade"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="vrak_posisjon" substitutionGroup="gml:AbstractFeature" type="geopackageskjema:vrak_posisjonType"/>
+  <complexType name="vrak_posisjonType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="geometry" type="gml:PointPropertyType"/>
+          <element name="objid" type="integer"/>
+          <element minOccurs="0" name="objtype" type="string"/>
+          <element minOccurs="0" name="lokalid" type="string"/>
+          <element minOccurs="0" name="navnerom" type="string"/>
+          <element minOccurs="0" name="forstedatafangstdato" type="date"/>
+          <element minOccurs="0" name="oppdateringsdato" type="date"/>
+          <element minOccurs="0" name="datauttaksdato" type="date"/>
+          <element minOccurs="0" name="malemetode" type="string"/>
+          <element minOccurs="0" name="noyaktighet" type="integer"/>
+          <element minOccurs="0" name="vraktype" type="string"/>
+          <element minOccurs="0" name="dybde" type="double"/>
+          <element minOccurs="0" name="vertikaldatum" type="string"/>
+          <element minOccurs="0" name="objektnavnengelsk" type="string"/>
+          <element minOccurs="0" name="objektnavnnorsk" type="string"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="vrak_posisjonPropertyType">
+    <sequence minOccurs="0">
+      <element ref="geopackageskjema:vrak_posisjon"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="vrakgrense_grense" substitutionGroup="gml:AbstractFeature" type="geopackageskjema:vrakgrense_grenseType"/>
+  <complexType name="vrakgrense_grenseType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="geometry" type="gml:CurvePropertyType"/>
+          <element name="objid" type="integer"/>
+          <element minOccurs="0" name="objtype" type="string"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="vrakgrense_grensePropertyType">
+    <sequence minOccurs="0">
+      <element ref="geopackageskjema:vrakgrense_grense"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>

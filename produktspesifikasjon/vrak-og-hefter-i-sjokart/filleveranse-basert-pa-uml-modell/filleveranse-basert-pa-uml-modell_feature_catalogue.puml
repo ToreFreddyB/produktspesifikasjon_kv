@@ -1,0 +1,79 @@
+@startuml
+' For wide diagrams, render with: plantuml -DPLANTUML_LIMIT_SIZE=16384 ...
+' The 'scale max' directive below caps the rendered output to prevent the
+' default PlantUML 4096px size limit from cropping the diagram.
+scale max 4000*4000
+
+title Vrak og hefter i sjøkart - Filleveranse basert på UML-modell - Objekttyper
+
+skinparam backgroundColor #F5F5F5
+skinparam shadowing false
+skinparam RoundCorner 6
+skinparam ArrowColor #6C8198
+skinparam wrapWidth 200
+skinparam class {
+  BackgroundColor #FBF2E8
+  BorderColor #9C8578
+  FontColor #2D201A
+  HeaderBackgroundColor #EFE1D6
+  HeaderFontColor #2D201A
+  AttributeIconSize 0
+}
+skinparam note {
+  BackgroundColor #FFFFFF
+  BorderColor #6C8198
+  FontColor #2D201A
+}
+skinparam stereotypeCBackgroundColor #EAD9CE
+skinparam stereotypeCBorderColor #9C8578
+skinparam stereotypeCFontColor #2D201A
+
+package "Objekttyper" {
+
+  class Vrakgrense <<featureType>> {
+    + grense [1] : GM_Curve
+  }
+
+  class Vrak <<featureType>> {
+    + område [0..1] : GM_Surface
+    + posisjon [0..1] : GM_Point
+    + vraktype [0..1] : Vraktype
+    + dybde [0..1] : Real
+    + vertikalDatum [0..1] : VertikalDatum
+    + objektnavnEngelsk [0..1] : CharacterString
+    + objektnavnNorsk [0..1] : CharacterString
+  }
+
+  abstract class Fellesegenskaper <<featureType>> {
+    + identifikasjon [1] : Identifikasjon
+    + førsteDatafangstdato [0..1] : Date
+    + oppdateringsdato [1] : Date
+    + datauttaksdato [1] : Date
+    + kvalitet [0..1] : Posisjonskvalitet
+  }
+
+  class HefteUrenBunn <<featureType>> {
+    + posisjon [1] : GM_Point
+    + hefteUrenBunntype [0..1] : HefteUrenBunntype
+    + dybde [0..1] : Real
+    + vertikalDatum [0..1] : VertikalDatum
+    + objektnavnEngelsk [0..1] : CharacterString
+    + objektnavnNorsk [0..1] : CharacterString
+  }
+
+  class Identifikasjon <<dataType>> {
+    + lokalId [1] : CharacterString
+    + navnerom [1] : CharacterString
+  }
+
+  class Posisjonskvalitet <<dataType>> {
+    + målemetode [1] : Målemetode
+    + nøyaktighet [0..1] : Integer
+  }
+}
+
+  Fellesegenskaper <|-- Vrak
+  Vrak --> Vrakgrense : avgrensesAvVrakgrense [0..*]
+  Fellesegenskaper <|-- HefteUrenBunn
+
+@enduml
