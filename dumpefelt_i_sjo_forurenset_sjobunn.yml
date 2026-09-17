@@ -1,0 +1,10 @@
+metadataId: d1b5217b-871d-4591-9597-a76f5a5668fc
+output_directory: produktspesifikasjon
+product_slug: dumpefelt_i_sjo_forurenset_sjobunn
+updated: '2026-09-17'
+outputs: geopackage
+scopes:
+- name: UML-modell
+  url: https://sosi.geonorge.no/svn/SOSI/SOSI%20Del%203/Statens%20kartverk/DumpefeltSj%c3%b8-20260415.xml
+  generator: xmi
+  description: ''
