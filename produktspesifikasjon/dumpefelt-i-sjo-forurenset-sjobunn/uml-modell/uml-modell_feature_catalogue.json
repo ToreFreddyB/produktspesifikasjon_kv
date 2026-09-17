@@ -1,0 +1,180 @@
+[
+  {
+    "name": "Dumpefeltgrense",
+    "description": "grense for område/lokalitet for senking/dumping i sjø\nBoundary for area/site for scuttling/dumping at sea",
+    "attributes": [
+      {
+        "name": "grense",
+        "type": "GM_Curve",
+        "description": "forløp som følger overgang mellom ulike fenomener\n\n-- Definition --\ncourse follwing the transition between different real world phenomena",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "Kurve"
+        }
+      }
+    ],
+    "abstract": false,
+    "relationships": {
+      "inheritance": [],
+      "associations": []
+    },
+    "package": "DumpefeltSjø-20260415"
+  },
+  {
+    "name": "Dumpefelt",
+    "description": "et havområde der mudret materiale eller annet potensielt mer skadelig materiale, f.eks. eksplosiver, kjemisk avfall, er bevisst dumpet.\nA sea area where dredged material or other potentially more harmful material, e.g. explosives, chemical waste, is deliberately deposited.",
+    "attributes": [
+      {
+        "name": "område",
+        "type": "GM_Surface",
+        "description": "objektets utstrekning\n\n-- Definition --\narea over which an object extends",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "Flate"
+        }
+      },
+      {
+        "name": "dumpefelttype",
+        "type": "Dumpefelttype",
+        "description": "angivelse av hva som dumpes\nThe category of the dumping ground.  Note:  S-57 CATDPG",
+        "cardinality": "1",
+        "valueDomain": {
+          "kind": "codelist",
+          "definition": "kategorisering av type dumpefelt.\nCategory of dumping ground.",
+          "asDictionary": "true",
+          "codeList": "https://register.geonorge.no/sosi-kodelister/temadata/maritim-infrastruktur/dumpefelttype"
+        },
+        "taggedValues": {
+          "SOSI_navn": "OMRTYPE"
+        }
+      },
+      {
+        "name": "sjøstatus",
+        "type": "Sjøstatus",
+        "description": "angivelse av status\nThe status of the object used for maritime objects.  Note:  S-57 STATUS",
+        "cardinality": "0..1",
+        "valueDomain": {
+          "kind": "codelist",
+          "definition": "objektets tilstand.\nThe status of the object used for maritime objects.  Note:  S-57 STATUS.",
+          "asDictionary": "true",
+          "codeList": "https://register.geonorge.no/sosi-kodelister/temadata/maritim-infrastruktur/sj%C3%B8status"
+        },
+        "taggedValues": {
+          "SOSI_navn": "SJØ_STATUS"
+        }
+      },
+      {
+        "name": "informasjonNorsk",
+        "type": "CharacterString",
+        "description": "generell opplysning\n\nMerknad:\nmulighet til å legge inn utfyllende informasjon om objektet",
+        "cardinality": "0..1",
+        "taggedValues": {
+          "SOSI_navn": "INFORMASJON_NORSK"
+        }
+      },
+      {
+        "name": "informasjonEngelsk",
+        "type": "CharacterString",
+        "description": "generell opplysning\n\nMerknad:\nmulighet til å legge inn utfyllende informasjon om objektet",
+        "cardinality": "0..1",
+        "taggedValues": {
+          "SOSI_navn": "INFORMASJON_ENGELSK"
+        }
+      },
+      {
+        "name": "oppdateringsdato",
+        "type": "DateTime",
+        "description": "dato for siste endring på objektetdataene\n\nMerknad:\nOppdateringsdato kan være forskjellig fra Datafangsdato ved at data som er registrert kan bufres en kortere eller lengre periode før disse legges inn i datasystemet (databasen).\n\n-Definition-\nDate and time at which this version of the spatial object was inserted or changed in the spatial data set.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "OPPDATERINGSDATO"
+        }
+      },
+      {
+        "name": "datauttaksdato",
+        "type": "DateTime",
+        "description": "dato for uttak fra en database\n\nMerknad:\nSkiller seg fra Kopidato ved at en ikke skiller på om det er uttak fra en originaldatabase eller en kopidatabase.",
+        "cardinality": "1",
+        "taggedValues": {
+          "SOSI_navn": "DATAUTTAKSDATO"
+        }
+      },
+      {
+        "name": "førsteDatafangstdato",
+        "type": "DateTime",
+        "description": "dato når data ble registrert/observert/målt første gang, som utgangspunkt for første digitalisering\n\nMerknad:\nførsteDatafangstdato brukes hvis det er av interesse å forvalte informasjon om når en ble klar over objektet. Dette kan for eksempel gjelde datoen for første flybilde som var utgangspunkt for registrering i en database.",
+        "cardinality": "0..1",
+        "taggedValues": {
+          "SOSI_navn": "FØRSTEDATAFANGSTDATO"
+        }
+      },
+      {
+        "name": "identifikasjon",
+        "type": "Identifikasjon",
+        "description": "unik identifikasjon av et objekt",
+        "cardinality": "1",
+        "attributes": [
+          {
+            "name": "lokalId",
+            "type": "CharacterString",
+            "description": "lokal identifikator, tildelt av dataleverendør/dataforvalter. Den lokale identifikatoren er unik innenfor navnerommet, ingen andre objekter har samme identifikator.\n\nNOTE: Det er data leverendørens ansvar å sørge for at denne lokale identifikatoren er unik innenfor navnerommet.",
+            "cardinality": "1",
+            "taggedValues": {
+              "SOSI_navn": "LOKALID"
+            }
+          },
+          {
+            "name": "navnerom",
+            "type": "CharacterString",
+            "description": "navnerom som unikt identifiserer datakilden til objektet, starter med to bokstavs kode jfr ISO 3166. Benytter understreking  (\"_\") dersom data produsenten ikke er assosiert med bare et land.\n\nNOTE 1 : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og vil registreres i \"INSPIRE external  Object Identifier Namespaces Register\"\n\nEksempel: NO for Norge.",
+            "cardinality": "1",
+            "taggedValues": {
+              "SOSI_navn": "NAVNEROM"
+            }
+          }
+        ]
+      },
+      {
+        "name": "kvalitet",
+        "type": "Posisjonskvalitet",
+        "description": "beskrivelse av kvaliteten på stedfestingen\n\nMerknad: Denne er identisk med ..KVALITET i tidligere versjoner av SOSI.",
+        "cardinality": "0..1",
+        "attributes": [
+          {
+            "name": "målemetode",
+            "type": "Målemetode",
+            "description": "metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss",
+            "cardinality": "1",
+            "valueDomain": {
+              "kind": "codelist",
+              "definition": "metode som ligger til grunn for registrering av posisjon\n\n\n-- Definition - -\nmethod on which registration of position is based",
+              "asDictionary": "true",
+              "codeList": "https://register.geonorge.no/sosi-kodelister/generelle-konsepter/4.5/m%C3%A5lemetode"
+            }
+          },
+          {
+            "name": "nøyaktighet",
+            "type": "Integer",
+            "description": "punktstandardavviket i grunnriss for punkter samt tverravvik for linjer\n\nMerknad:\nOppgitt i cm",
+            "cardinality": "0..1",
+            "taggedValues": {
+              "SOSI_navn": "NØYAKTIGHET"
+            }
+          }
+        ]
+      }
+    ],
+    "abstract": false,
+    "relationships": {
+      "inheritance": [],
+      "associations": [
+        {
+          "target": "Dumpefeltgrense",
+          "role": "avgrensesAvDumpefeltgrense",
+          "cardinality": "0..*"
+        }
+      ]
+    },
+    "package": "DumpefeltSjø-20260415"
+  }
+]

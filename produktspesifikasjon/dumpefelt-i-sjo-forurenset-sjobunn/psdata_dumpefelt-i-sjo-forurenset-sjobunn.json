@@ -1,0 +1,319 @@
+{
+  "overview": "Denne produktspesifikasjonen er autogenerert fra metadata i Geonorge og datamodell fra SOSI modellregister og/eller OGC API Features. Noe ekstra informasjon kan ha blitt lagt til gjennom manuell prosess. Produktspesifikasjonen er i henhold til standarden: 'Geografisk informasjon - Dataproduktspesifikasjoner' (ISO19131:2022)",
+  "title": "Dumpefelt i sjø (forurenset sjøbunn)",
+  "format": "text/html",
+  "date": {
+    "creation": "2026-01-19",
+    "revision": "2026-05-06"
+  },
+  "language": "nor",
+  "contact": {
+    "individualName": "Siri Reimers",
+    "organizationName": "Kartverket",
+    "logo": "https://register.geonorge.no/data/organizations/971040238_Kartverket_liten.png",
+    "electronicMailAddress": "reisir@kartverket.no",
+    "role": "owner"
+  },
+  "identificationSection": {
+    "title": "Dumpefelt i sjø (forurenset sjøbunn)",
+    "abstract": "Datasettet angir geografisk område for dumpefelt avmerket i sjøkart langs norskekysten. \nDatasettet inneholder informasjon om status og type dumpefelt.\nFormålet med tjenesten er å bidra til kyst- og fiskeriforvaltning, arealplanlegging, samferdsel og samfunnssikkerhet. \nDumpefelt i sjø er fast avsatte sjøområder hvor det tidligere ble dumpet masse og avfall som anses som skadelig og som det må tas hensyn til ved bruk og ferdsel i området. \nDumpefeltene publiseres i dag i navigasjonsproduktene sjøkart og elektroniske sjøkart. De publiseres også i karttjenesten Den norske los.\nAlle dumpefelt i norske sjøkart er merket med status 'disused', altså 'ikke i bruk' på grunn av forurensingsforskriften. \nAll dumping i sjø er forbudt, jamfør Forskrift om begrensning av forurensning (forurensningsforskriften). \nDatasettet forvaltes kontinuerlig og publiseres av Kartverket.",
+    "purpose": {
+      "summary": "Dumpefelt i sjø er opprettet og holdes kontinuerlig oppdatert for å understøtte produksjonen av navigasjonsprodukt.",
+      "useCase": {
+        "name": "Bruksområde",
+        "summary": "Dumpefelt i sjø er informasjon som kan være nyttig i et beslutningsverktøy i forbindelse med plan – og forvaltningsarbeid. \nDatasettet kan benyttes til planlegging, illustrasjoner, forskning og analyse i forbindelse med f.eks: - kystsoneplanlegging - utbygging i kystsonen - underlag for ulike type temakart - forprosjektering av forskjellige undervannsaktiviteter - planlegging av fiskeri og havbruk - underlag for verneområder - underlag for beredskapsplaner - forprosjektering av trase for sjøkabel/rørledning.\nTjenesten inneholder informasjon om dumpefelt i sjø som ikke foreligger andre steder."
+      }
+    },
+    "spatialRepresentationType": "Vektor",
+    "spatialResolution": {
+      "equivalentScale": "50000"
+    },
+    "supplementalInformation": "Trenger du hjelp til å laste ned og ta i bruk Kartverkets data og tjenester? På kartverket.no finner du tips og veiledninger.",
+    "uniqueId": "https://data.geonorge.no/sosi/kyst/dumpefelt_i_sjo",
+    "keyword": [
+      "Dumpefelt i sjø",
+      "Forurenset sjøbunn",
+      "Dumpefelt med forurenset sjøbunn",
+      "Uren bunn",
+      "Kystsoneforvaltning",
+      "Planarbeid",
+      "Norge digitalt",
+      "Nautisk informasjon",
+      "fellesDatakatalog",
+      "Kyst og fiskeri",
+      "Samferdsel",
+      "Samfunnssikkerhet",
+      "Plan",
+      "Forurensning",
+      "Dumpefeltgrense",
+      "Dumpefelt",
+      "dumpefelttype",
+      "sjøstatus",
+      "informasjonNorsk",
+      "informasjonEngelsk"
+    ],
+    "restriction": {
+      "resourceConstraints": {
+        "useLimitations": "Ingen bruksbegrensing"
+      },
+      "legalConstraints": {
+        "accessConstraints": "Åpne data",
+        "useConstraints": "Lisens",
+        "license": "Creative Commons BY 4.0 (CC BY 4.0)",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "securityConstraints": {
+        "classification": "Ugradert"
+      }
+    },
+    "contact": [
+      {
+        "individualName": "Siri Reimers",
+        "organizationName": "Kartverket",
+        "electronicMailAddress": "reisir@kartverket.no",
+        "role": "owner"
+      },
+      {
+        "individualName": "Kundesenter",
+        "organizationName": "Kartverket",
+        "electronicMailAddress": "kundesenter@kartverket.no",
+        "role": "pointOfContact"
+      },
+      {
+        "individualName": "Kundesenter",
+        "organizationName": "Kartverket",
+        "electronicMailAddress": "kundesenter@kartverket.no",
+        "role": "publisher"
+      }
+    ],
+    "maintenance": "Daglig",
+    "extent": {
+      "geographicElement": {
+        "westBoundLongitude": "4.0",
+        "eastBoundLongitude": "31.0",
+        "southBoundLatitude": "57.0",
+        "northBoundLatitude": "71.0"
+      },
+      "temporalElement": {
+        "timePeriod": {
+          "beginPosition": "2026-01-19",
+          "endPosition": "2026-05-06"
+        }
+      }
+    },
+    "date": {
+      "creation": "2026-01-19",
+      "publication": "2026-01-19",
+      "revision": "2026-05-06"
+    },
+    "language": "nor"
+  },
+  "scopeSection": [
+    {
+      "specificationScope": {
+        "scopeIdentification": "Hele datasettet",
+        "level": "dataset",
+        "levelDescription": "Gjelder hele datasettet. Hvis omfang ikke er oppgitt under en overskrift, gjelder teksten for hele datasettet og alle leveranser"
+      }
+    },
+    {
+      "specificationScope": {
+        "scopeIdentification": "UML-modell",
+        "level": "dataset"
+      }
+    }
+  ],
+  "referenceSystemSection": {
+    "spatialReferenceSystem": [
+      {
+        "code": "EPSG:25832",
+        "name": "EUREF89 UTM sone 32, 2d"
+      },
+      {
+        "code": "EPSG:25833",
+        "name": "EUREF89 UTM sone 33, 2d"
+      },
+      {
+        "code": "EPSG:25835",
+        "name": "EUREF89 UTM sone 35, 2d"
+      },
+      {
+        "code": "EPSG:3035",
+        "name": "EUREF89 / ETRS89-LAEA Europe"
+      },
+      {
+        "code": "EPSG:4258",
+        "name": "EUREF 89 Geografisk (ETRS 89) 2d"
+      },
+      {
+        "code": "EPSG:25832",
+        "name": "EUREF89 UTM sone 32, 2d"
+      }
+    ]
+  },
+  "dataQualitySection": {
+    "scope": {
+      "level": "dataset"
+    },
+    "report": [
+      {
+        "nameOfMeasure": "SOSI produktspesifikasjon: Dumpefelt i sjø (forurenset sjøbunn)",
+        "descriptiveResult": "Dataene er i henhold til produktspesifikasjonen"
+      },
+      {
+        "nameOfMeasure": "Sosi applikasjonsskjema",
+        "descriptiveResult": "GML-filer er i henhold til applikasjonsskjema"
+      }
+    ]
+  },
+  "maintenanceSection": {
+    "maintenanceAndUpdateFrequency": "Daglig",
+    "maintenanceAndUpdateStatement": "Kontinuerlig oppdatert"
+  },
+  "dataCaptureAndProductionSection": {
+    "DataAcquisitionAndProcessing": {
+      "processStep": [
+        {
+          "description": "Dumpefelt er basert på informasjon fra havner og kommuner om dumping av vrak, kabler, mudret masse etc. \nDatasettet holdes i dag løpende oppdatert basert på innsendt informasjon om endring av eksisterende dumpefelt og/eller nye dumpefelt fra Forsvaret, Kystverket, fylker og kommuner. \nOversikten over dumpefelt i sjø er ikke utfyllende siden informasjonen om hvor det er dumpet ammunisjon, annet krigsmateriell, skrot og fartøy langs norskekysten er svært mangelfull. Det er vitnebeskrivelser som indikere at det ble dumpet tysk krigsmateriell i mange flere norske fjorder. Det finnes også omtale av dumpefelt i sjø ifm søknader om å dumpe mudret masse, som heller ikke er avmerket i sjøkart."
+        }
+      ]
+    }
+  },
+  "portrayal": {
+    "name": "Tegneregler",
+    "linkage": "https://register.geonorge.no/tegneregler/dumpefelt-i-sjø-forurenset-sjøbunn"
+  },
+  "deliverySection": [
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "fylkesvis, kommunevis, landsfiler",
+          "deliveryMediumName": "Geonorge nedlastning",
+          "deliveryService": {
+            "serviceEndpoint": "https://nedlasting.geonorge.no/api/capabilities/",
+            "serviceProperty": {
+              "type": "Geonorge nedlastning",
+              "value": "GEONORGE:DOWNLOAD"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "FGDB"
+          },
+          {
+            "formatName": "GML"
+          },
+          {
+            "formatName": "GPKG"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "fylkesvis, kommunevis, landsfiler",
+          "deliveryMediumName": "Atom Feed",
+          "deliveryService": {
+            "serviceEndpoint": "http://nedlasting.geonorge.no/geonorge/ATOM-feeds/DumpefeltSjo_AtomFeedFGDB.xml",
+            "serviceProperty": {
+              "type": "Atom Feed",
+              "value": "W3C:AtomFeed"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "FGDB"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "fylkesvis, kommunevis, landsfiler",
+          "deliveryMediumName": "Atom Feed",
+          "deliveryService": {
+            "serviceEndpoint": "http://nedlasting.geonorge.no/geonorge/ATOM-feeds/DumpefeltSjo_AtomFeedGML.xml",
+            "serviceProperty": {
+              "type": "Atom Feed",
+              "value": "W3C:AtomFeed"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "GML"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "fylkesvis, kommunevis, landsfiler",
+          "deliveryMediumName": "Atom Feed",
+          "deliveryService": {
+            "serviceEndpoint": "http://nedlasting.geonorge.no/geonorge/ATOM-feeds/DumpefeltSjo_AtomFeedGPKG.xml",
+            "serviceProperty": {
+              "type": "Atom Feed",
+              "value": "W3C:AtomFeed"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "GPKG"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Dumpefelt i sjø (forurenset sjøbunn) WMS",
+          "deliveryService": {
+            "serviceEndpoint": "https://wms.geonorge.no/skwms1/wms.dumpefelt_sjo?request=GetCapabilities&service=WMS",
+            "serviceProperty": {
+              "type": "Dumpefelt i sjø (forurenset sjøbunn) WMS",
+              "value": "WMS-tjeneste"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "WMS"
+          }
+        ],
+        "deliveryScope": "Tjeneste"
+      }
+    }
+  ],
+  "metadataSection": {
+    "metadataStandard": "ISO19115",
+    "metadataStandardVersion": "2003",
+    "metadataDate": "2026-09-16",
+    "language": "nor",
+    "contact": {
+      "organizationName": "Kartverket",
+      "individualName": "Kundesenter",
+      "logo": "https://register.geonorge.no/data/organizations/971040238_Kartverket_liten.png",
+      "electronicMailAddress": "kundesenter@kartverket.no",
+      "role": "pointOfContact"
+    },
+    "metadataIdentifier": {
+      "authority": "Geonorge",
+      "code": "d1b5217b-871d-4591-9597-a76f5a5668fc",
+      "codeSpace": "https://kartkatalog.geonorge.no/metadata/",
+      "metadataLinkage": "https://kartkatalog.geonorge.no/metadata/d1b5217b-871d-4591-9597-a76f5a5668fc"
+    }
+  },
+  "additionalReferences": [
+    {
+      "title": "Produktark",
+      "href": "https://register.geonorge.no/produktark/dumpefelt-i-sjø-forurenset-sjøbunn"
+    }
+  ]
+}
