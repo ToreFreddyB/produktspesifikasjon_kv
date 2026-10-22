@@ -1,0 +1,93 @@
+@startuml
+' For wide diagrams, render with: plantuml -DPLANTUML_LIMIT_SIZE=16384 ...
+' The 'scale max' directive below caps the rendered output to prevent the
+' default PlantUML 4096px size limit from cropping the diagram.
+scale max 4000*4000
+
+title Fastmerker - Høydefastmerker - fastmerker_uml - Objekttyper
+
+skinparam backgroundColor #F5F5F5
+skinparam shadowing false
+skinparam RoundCorner 6
+skinparam ArrowColor #6C8198
+skinparam wrapWidth 200
+skinparam class {
+  BackgroundColor #FBF2E8
+  BorderColor #9C8578
+  FontColor #2D201A
+  HeaderBackgroundColor #EFE1D6
+  HeaderFontColor #2D201A
+  AttributeIconSize 0
+}
+skinparam note {
+  BackgroundColor #FFFFFF
+  BorderColor #6C8198
+  FontColor #2D201A
+}
+skinparam stereotypeCBackgroundColor #EAD9CE
+skinparam stereotypeCBorderColor #9C8578
+skinparam stereotypeCFontColor #2D201A
+
+package "Objekttyper" {
+
+  class Fastmerke <<featureType>> {
+    + posisjon [1] : GM_Point
+    + punktNummer [1] : CharacterString
+    + fastmerkeNavn [0..1] : CharacterString
+    + punkttype [0..1] : PunktType
+    + fastmerkeEtableringsdato [0..1] : Integer
+    + fastmerkestatus [0..1] : Fastmerkestatus
+    + fastmerkeUnderlag [0..1] : FastmerkeUnderlag
+    + fastmerkeSentrumRef [0..1] : FastmerkeSentrumRef
+    + fastmerkeHøydeRef [0..1] : FastmerkeHøydeRef
+    + boltHøgde [0..1] : Real
+    + kommune [0..*] : Kommunenummer
+    + punktBeskrivelse [0..1] : CharacterString
+    + sone [1] : Integer
+    + naturligAkse [1] : Integer
+    + nordKoordinat [1] : Real
+    + østKoordinat [1] : Real
+    + nordKoordinatEuref89Sone33 [1] : Real
+    + østKoordinatEuref89Sone33 [1] : Real
+    + nordKoordinatNGO1948 [1] : Real
+    + østKoordinatNGO1948 [1] : Real
+    + høydeNN1954 [0..1] : Real
+    + høydeEllipsoidisk [0..1] : Real
+    + høydeNormalNN2000 [0..1] : Real
+    + beregningsDatoNGO1948 [0..1] : Date
+    + beregningsDatoEuref89 [0..1] : Date
+    + beregningsDatoNN1954 [0..1] : Date
+    + beregningsDatoNN2000 [0..1] : Date
+    + høydereferansemodell [0..1] : CharacterString
+    + høydeGammelNN2000_2018 [0..1] : Real
+  }
+
+  abstract class Fellesegenskaper <<featureType>> {
+    + identifikasjon [1] : Identifikasjon
+    + oppdateringsdato [0..1] : Date
+    + kvalitet [0..1] : Posisjonskvalitet
+  }
+
+  class Fastmerkestatus <<dataType>> {
+    + verifiseringsdato [0..1] : Date
+    + typeStatus [0..1] : TypeStatus
+  }
+
+  class Identifikasjon <<dataType>> {
+    + lokalId [1] : CharacterString
+    + navnerom [1] : CharacterString
+  }
+
+  class Posisjonskvalitet <<dataType>> {
+    + målemetode [1] : Målemetode
+    + målemetodeHøyde [0..1] : MålemetodeHøyde
+    + nøyaktighetNGO1948 [0..1] : Integer
+    + nøyaktighetEUREF89 [0..1] : Integer
+    + nøyaktighetHøydeNN1954 [0..1] : Integer
+    + nøyaktighetHøydeNN2000 [0..1] : Integer
+  }
+}
+
+  Fellesegenskaper <|-- Fastmerke
+
+@enduml
