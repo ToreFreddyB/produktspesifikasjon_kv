@@ -1,0 +1,386 @@
+{
+  "overview": "Denne produktspesifikasjonen er autogenerert fra metadata i Geonorge og datamodell fra SOSI modellregister og/eller OGC API Features. Noe ekstra informasjon kan ha blitt lagt til gjennom manuell prosess. Produktspesifikasjonen er i henhold til standarden: 'Geografisk informasjon - Dataproduktspesifikasjoner' (ISO19131:2022)",
+  "title": "Fastmerker - Høydefastmerker",
+  "format": "text/html",
+  "date": {
+    "revision": "2026-10-15"
+  },
+  "language": "nor",
+  "contact": {
+    "individualName": "Olav Vestøl",
+    "organizationName": "Kartverket",
+    "logo": "https://register.geonorge.no/data/organizations/971040238_Kartverket_liten.png",
+    "electronicMailAddress": "kundesenter@kartverket.no",
+    "role": "owner"
+  },
+  "identificationSection": {
+    "title": "Fastmerker - Høydefastmerker",
+    "abstract": "Datasettet Fastmerker deles inn i tre grupper: Stam- og landsnettpunkter er bestemt med GNSS og er de mest nøyaktige fastmerkene. Ligger som oftest i rimelig avstand fra vei. Trekantpunkter er bestemt ved eldre vinkel- og avstandsmålinger og er derfor mindre nøyaktige. De anbefales ikke der det er høye krav til nøyaktighet. Trekantpunkter finnes også i områder langt fra vei. Mange av trekantpunktene i lavlandet er uegnet for GNSS-måling. Høydefastmerkene er meget godt bestemt i høyde ved presisjonsnivellement, men grunnrisskoordinatene er i mange tilfeller svært upresise. Mange høydefastmerker nær vei er dessverre gått tapt.",
+    "purpose": {
+      "summary": "Grunnlag for oppmåling og kartlegging.",
+      "useCase": {
+        "name": "Bruksområde",
+        "summary": "Høydefastmerker: Høydegrunnlag der det er spesielt strenge krav til høydenøyaktighet."
+      }
+    },
+    "topicCategory": [
+      "Stedsangivelse"
+    ],
+    "spatialRepresentationType": "Vektor",
+    "supplementalInformation": "Høydefastmerkene er bolter med meget nøyaktig høyde. Grunnrisskoordinatene er i de fleste tilfeller upresise. Mange høydefastmerker nær vei er dessverre gått tapt.",
+    "uniqueId": "https://data.geonorge.no/sosi/hoydedata/fastmerker_hoydefastmerker",
+    "keyword": [
+      "fastmerke",
+      "Høydefastmerker",
+      "Trigpunkter",
+      "Nivellementsfastmerker",
+      "Geodesi",
+      "nivellementspunkt",
+      "Norge digitalt",
+      "modellbaserteVegprosjekter",
+      "fellesDatakatalog",
+      "Basis geodata",
+      "Fastmerkestatus",
+      "punktNummer",
+      "fastmerkeNavn",
+      "punkttype",
+      "fastmerkeEtableringsdato",
+      "fastmerkeUnderlag",
+      "fastmerkeSentrumRef",
+      "fastmerkeHøydeRef",
+      "boltHøgde",
+      "punktBeskrivelse",
+      "naturligAkse",
+      "nordKoordinat",
+      "østKoordinat",
+      "nordKoordinatEuref89Sone33",
+      "østKoordinatEuref89Sone33",
+      "nordKoordinatNGO1948",
+      "østKoordinatNGO1948",
+      "høydeNN1954",
+      "høydeEllipsoidisk",
+      "høydeNormalNN2000",
+      "beregningsDatoNGO1948",
+      "beregningsDatoEuref89",
+      "beregningsDatoNN1954",
+      "beregningsDatoNN2000",
+      "nøyaktighetNGO1948",
+      "nøyaktighetEUREF89",
+      "nøyaktighetHøydeNN1954",
+      "nøyaktighetHøydeNN2000"
+    ],
+    "restriction": {
+      "resourceConstraints": {
+        "useLimitations": "Ingen begrensninger på bruk er oppgitt."
+      },
+      "legalConstraints": {
+        "accessConstraints": "Åpne data",
+        "useConstraints": "Lisens",
+        "license": "No conditions apply to access and use",
+        "licenseUrl": "http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply",
+        "otherConstraints": "Ingen begrensninger oppgitt."
+      },
+      "securityConstraints": {
+        "classification": "Ugradert"
+      }
+    },
+    "contact": [
+      {
+        "individualName": "Olav Vestøl",
+        "organizationName": "Kartverket",
+        "electronicMailAddress": "kundesenter@kartverket.no",
+        "role": "owner"
+      },
+      {
+        "individualName": "Per Chr. Bratheim",
+        "organizationName": "Kartverket",
+        "electronicMailAddress": "kundesenter@kartverket.no",
+        "role": "pointOfContact"
+      },
+      {
+        "individualName": "Per Chr. Bratheim",
+        "organizationName": "Kartverket",
+        "electronicMailAddress": "kundesenter@kartverket.no",
+        "role": "publisher"
+      }
+    ],
+    "maintenance": "Årlig",
+    "extent": {
+      "geographicElement": {
+        "westBoundLongitude": "4.5",
+        "eastBoundLongitude": "32.799",
+        "southBoundLatitude": "57.7187",
+        "northBoundLatitude": "70.9183"
+      },
+      "geographicDescription": [
+        "Norge"
+      ],
+      "temporalElement": {
+        "timePeriod": {
+          "beginPosition": "2026-10-15",
+          "endPosition": "2026-10-15"
+        }
+      }
+    },
+    "date": {
+      "revision": "2026-10-15"
+    },
+    "language": "nor"
+  },
+  "scopeSection": [
+    {
+      "specificationScope": {
+        "scopeIdentification": "Hele datasettet",
+        "level": "dataset",
+        "levelDescription": "Gjelder hele datasettet. Hvis omfang ikke er oppgitt under en overskrift, gjelder teksten for hele datasettet og alle leveranser"
+      }
+    },
+    {
+      "specificationScope": {
+        "scopeIdentification": "fastmerker_uml",
+        "level": "dataset"
+      }
+    }
+  ],
+  "referenceSystemSection": {
+    "spatialReferenceSystem": [
+      {
+        "code": "EPSG:3035",
+        "name": "EUREF89 / ETRS89-LAEA Europe"
+      },
+      {
+        "code": "EPSG:4258",
+        "name": "EUREF 89 Geografisk (ETRS 89) 2d"
+      },
+      {
+        "code": "EPSG:5972",
+        "name": "EUREF89 UTM sone 32, 2d + NN2000"
+      },
+      {
+        "code": "EPSG:5973",
+        "name": "EUREF89 UTM sone 33, 2d + NN2000"
+      },
+      {
+        "code": "EPSG:5975",
+        "name": "EUREF89 UTM sone 35, 2d + NN2000"
+      },
+      {
+        "code": "EPSG:3035",
+        "name": "EUREF89 / ETRS89-LAEA Europe"
+      }
+    ]
+  },
+  "dataQualitySection": {
+    "scope": {
+      "level": "dataset"
+    },
+    "report": [
+      {
+        "nameOfMeasure": "SOSI produktspesifikasjon: Fastmerker",
+        "descriptiveResult": "Dataene er ikke vurdert iht produktspesifikasjonen"
+      },
+      {
+        "nameOfMeasure": "Sosi applikasjonsskjema",
+        "descriptiveResult": "SOSI-filer er ikke vurdert i henhold til applikasjonsskjema"
+      },
+      {
+        "nameOfMeasure": "Sosi applikasjonsskjema",
+        "descriptiveResult": "GML-filer er ikke vurdert i henhold til applikasjonsskjema"
+      }
+    ]
+  },
+  "maintenanceSection": {
+    "maintenanceAndUpdateFrequency": "Årlig"
+  },
+  "dataCaptureAndProductionSection": {
+    "DataAcquisitionAndProcessing": {
+      "dataCaptureStatement": "Ingen prosseshistorie tilgjenglig."
+    }
+  },
+  "deliverySection": [
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "fylkesvis, kommunevis, landsfiler",
+          "deliveryMediumName": "Geonorge nedlastning",
+          "deliveryService": {
+            "serviceEndpoint": "https://nedlasting.geonorge.no/api/capabilities/43838cda-fa62-11e6-bc64-92361f002671",
+            "serviceProperty": {
+              "type": "Geonorge nedlastning",
+              "value": "GEONORGE:DOWNLOAD"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "FGDB"
+          },
+          {
+            "formatName": "GML"
+          },
+          {
+            "formatName": "PostGIS"
+          },
+          {
+            "formatName": "SOSI"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "fylkesvis, kommunevis, landsfiler",
+          "deliveryMediumName": "Atom Feed",
+          "deliveryService": {
+            "serviceEndpoint": "http://nedlasting.geonorge.no/geonorge/ATOM-feeds/Fasthoyde_AtomFeedFGDB.xml",
+            "serviceProperty": {
+              "type": "Atom Feed",
+              "value": "W3C:AtomFeed"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "FGDB"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "fylkesvis, kommunevis, landsfiler",
+          "deliveryMediumName": "Atom Feed",
+          "deliveryService": {
+            "serviceEndpoint": "http://nedlasting.geonorge.no/geonorge/ATOM-feeds/Fasthoyde_AtomFeedGML.xml",
+            "serviceProperty": {
+              "type": "Atom Feed",
+              "value": "W3C:AtomFeed"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "GML"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "fylkesvis, kommunevis, landsfiler",
+          "deliveryMediumName": "Atom Feed",
+          "deliveryService": {
+            "serviceEndpoint": "http://nedlasting.geonorge.no/geonorge/ATOM-feeds/Fasthoyde_AtomFeedPostGIS.xml",
+            "serviceProperty": {
+              "type": "Atom Feed",
+              "value": "W3C:AtomFeed"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "PostGIS"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "fylkesvis, kommunevis, landsfiler",
+          "deliveryMediumName": "Atom Feed",
+          "deliveryService": {
+            "serviceEndpoint": "http://nedlasting.geonorge.no/geonorge/ATOM-feeds/Fasthoyde_AtomFeedSOSI.xml",
+            "serviceProperty": {
+              "type": "Atom Feed",
+              "value": "W3C:AtomFeed"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "SOSI"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Fastmerker & Basestajoner WMS",
+          "deliveryService": {
+            "serviceEndpoint": "https://wms.geonorge.no/skwms1/wms.fastmerker2?request=GetCapabilities&service=WMS",
+            "serviceProperty": {
+              "type": "Fastmerker & Basestajoner WMS",
+              "value": "WMS-tjeneste"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "png"
+          }
+        ],
+        "deliveryScope": "Tjeneste"
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "GeoPackage: fastmerker-uml",
+          "deliveryService": {
+            "serviceEndpoint": "https://raw.githubusercontent.com/ToreFreddyB/produktspesifikasjon_kv/main/produktspesifikasjon/fastmerker-hoydefastmerker/fastmerker-uml/fastmerker-uml.gpkg",
+            "serviceProperty": {
+              "type": "Fil",
+              "value": "Nedlasting"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "GPKG"
+          }
+        ]
+      }
+    }
+  ],
+  "metadataSection": {
+    "metadataStandard": "ISO19115",
+    "metadataStandardVersion": "2003",
+    "metadataDate": "2026-10-21",
+    "language": "nor",
+    "contact": {
+      "organizationName": "Kartverket",
+      "individualName": "Per Chr. Bratheim",
+      "logo": "https://register.geonorge.no/data/organizations/971040238_Kartverket_liten.png",
+      "electronicMailAddress": "kundesenter@kartverket.no",
+      "role": "pointOfContact"
+    },
+    "metadataIdentifier": {
+      "authority": "Geonorge",
+      "code": "43838cda-fa62-11e6-bc64-92361f002671",
+      "codeSpace": "https://kartkatalog.geonorge.no/metadata/",
+      "metadataLinkage": "https://kartkatalog.geonorge.no/metadata/43838cda-fa62-11e6-bc64-92361f002671"
+    }
+  },
+  "chapterAutofill": {
+    "om_spesifikasjonen": 8,
+    "om_produktet": 180,
+    "formaal": 5,
+    "bruksomraade": 10,
+    "omfang": 24,
+    "datainnhold_og_struktur": 0,
+    "referansesystem": 41,
+    "datakvalitet": 30,
+    "datafangst_og_produksjon": 3,
+    "vedlikehold": 1,
+    "presentasjon": 0,
+    "leveranse": 71,
+    "metadata": 15,
+    "tilleggsinformasjon": 22,
+    "datamodell": 1742
+  }
+}
