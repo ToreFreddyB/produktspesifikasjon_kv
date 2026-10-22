@@ -1,0 +1,10 @@
+metadataId: 43838cda-fa62-11e6-bc64-92361f002671
+output_directory: produktspesifikasjon
+product_slug: fastmerker_hoydefastmerker
+updated: '2026-10-22'
+outputs: geopackage
+scopes:
+- name: fastmerker_uml
+  url: inputs/fastmerker-hoydefastmerker/model.xmi
+  generator: xmi
+  description: ''
